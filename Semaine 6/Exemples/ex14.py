@@ -11,4 +11,3 @@ puissance = math.pow(log_nombre, 3.0)
 print("le log du nombre", log_nombre)
 print("le cube de", log_nombre, "est", puissance)
 
-
