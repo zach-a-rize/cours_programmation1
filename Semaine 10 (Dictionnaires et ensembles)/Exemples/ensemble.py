@@ -17,7 +17,7 @@ print(panier.difference(fruits))
 print(fruits - panier)
 
 # items dans fruits ou panier (union)
-print(panier | fruits),
+print(panier | fruits)
 print(panier.union(fruits))
 
 # items dans fruits et panier (intersection)
