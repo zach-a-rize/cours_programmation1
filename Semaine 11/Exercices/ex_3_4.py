@@ -6,22 +6,16 @@ heros = {
 }
 
 
-def afficher_personnage(personnage: dict) -> None:
-    print(f"{personnage["nom"]}, {personnage["classe"]} (niveau {personnage["niveau"]})")
-    stats: dict = personnage["stats"]
-    for cle, valeur in stats.items():
-        print(f"\t{cle} : {valeur}")
+def afficher_personnage(perso: dict):
+    print(f"{perso["nom"]}, {perso["classe"]}(niveau{perso["niveau"]})")
+    for nom_stat, valeur in perso["stats"].items():
+        print(f"\t{nom_stat} : {valeur}")
 
 
 afficher_personnage(heros)
 
+heros["niveau"] += 1
+for stat in heros["stats"].keys():
+    heros["stats"][stat] += 2
 
-def monter_niveau(personnage: dict):
-    personnage["niveau"] += 1
-    stats = personnage["stats"]
-    for stat in stats.keys():
-        stats[stat] += 2
-
-
-monter_niveau(heros)
 afficher_personnage(heros)
