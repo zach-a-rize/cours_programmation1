@@ -4,3 +4,7 @@ phrase = phrase.lower()
 phrase = phrase.replace(" ", "")
 if phrase == phrase[::-1]:
     print("Palindrome magique !")
+
+
+
+
